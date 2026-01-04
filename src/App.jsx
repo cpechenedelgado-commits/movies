@@ -9,7 +9,6 @@ function App() {
   const [search, setSearch] = useState("");
   const [yearFilter, setYearFilter] = useState("");
 
-  // Cargar favoritos y filtros desde localStorage
   useEffect(() => {
     const savedFavs = localStorage.getItem("favorites");
     if (savedFavs) setFavorites(JSON.parse(savedFavs));
